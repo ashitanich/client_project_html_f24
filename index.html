@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +17,21 @@
     <title>Student Success Portal</title>
 </head>
 <body>
-    <a href ="#main-content">Skip to Main Content</a>
+    <div class ="skip"><a href ="#main-content">Skip to Main Content</a></div>
     <header>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
             <ul>
-                <li><a href = "index.html">Home</a></li>
+                <li class="active"><a href = "index.html">Home</a></li>
                 <li><a href = "academic_support.html">Academic Support</a></li>
                 <li><a href = "food_pantry.html">Food Pantry</a></li>
-                <li><a href="study_spaces.html">Study Spaces</a></li>
+                <li><a href= "study_spaces.html">Study Spaces</a></li>
             </ul>
         </nav>
         <h1>Student Success Portal</h1>
 
     </header>
-    <main id="main-content">
+    <main class ="container" id="main-content">
         <section>
             <h2>Welcome to the UM Grad Success Navigator</h2>
             <p> Your Comprehensive Guide to Resources for Graduate School Success.</p>
@@ -66,22 +67,22 @@
         <section>
             <h2>Mental Health</h2>
             <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
-            <article>
-                <h3>Counseling and Psychological Services (CAPS):</h3>
+            <article class="card">
+                <h3>Counseling and Psychological Services</h3>
                 <p> Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
             </article>
-            <article>
-                <h3>Wellness Coaching:</h3>
+            <article class="card">
+                <h3>Wellness Coaching</h3>
 
                 <p>Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.</p>
             </article>
-            <article>
-                <h3>Mindfulness Resources:</h3>
+            <article class="card">
+                <h3>Mindfulness Resources</h3>
 
                 <p> Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</p>
             </article>
-            <article>
-                <h3>Support Groups:</h3>
+            <article class="card">
+                <h3>Support Groups</h3>
 
                 <p> Join peer support groups for shared experiences and collective coping strategies.</p>
             </article>
