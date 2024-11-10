@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +21,7 @@
         rel="stylesheet">
     <title>404</title>
 </head>
+
 <body class=>
     <div class="skip"><a href="#main-content">Skip to Main Content</a></div>
     <header>
@@ -37,17 +37,21 @@
     </header>
     <main class="container error-page" id="main-content">
         <article class="glass_card">
-            <h1 class="glass">404<h1>
-            <h2 class="glass2">Oops! Looks like you took a wrong turn on campus!</h2>
-            <p class="glass2">Just like finding a parking spot during finals week, this page is... nowhere to be found. Maybe try heading back to class—or, you know, the homepage. We promise, it’ll be less confusing than finding coffee at 2 a.m.</p>
-            <a href="index.html" class="button">Return Home</a>
+            <h1 class="glass">404</h1>
+                    <h2 class="glass2">Oops! Looks like you took a wrong turn on campus!</h2>
+                    <p class="glass2">Just like finding a parking spot during finals week, this page is... nowhere to be
+                        found. Maybe try heading back to class—or, you know, the homepage. We promise, it’ll be less
+                        confusing than finding coffee at 2 a.m.</p>
+                    <a href="index.html" class="button error">Return to Home Page</a>
         </article>
     </main>
     <footer>
-        <p>MSI Academic Advising | <a
+        <p>MSI Academic Advising <span id="year"></span> | <a
                 href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
                 Advising </a></p>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear(); </script>
 </body>
 
 </html>

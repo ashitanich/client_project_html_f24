@@ -20,6 +20,27 @@ body {
   padding: 20px;
 }
 
+.skip {
+  position: absolute;
+  top: -40px;
+}
+
+.skip a {
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus {
+  position: absolute;
+  top: 30px;
+  opacity: 1;
+  z-index: 1000;
+}
+
 h1 {
   font-size: 36px;
   color: #00274C;
@@ -81,10 +102,8 @@ nav {
 nav img {
   display: block;
   margin: 0 auto 20px;
-  /* Add margin below the image */
   max-width: 30%;
   height: auto;
-  /* Ensure the logo is responsive */
   justify-content: right;
 }
 
@@ -111,32 +130,9 @@ nav a:focus {
   text-decoration: underline;
 }
 
-.skip {
-  position: absolute;
-  top: -40px;
-  opacity: 0;
-}
-
-.skip a {
-  background: white;
-  left: 0;
-  padding: 6px;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
-  z-index: 1;
-}
-
-.skip a:focus {
-  position: absolute;
-  top: 20px;
-  opacity: 1;
-  z-index: 1000;
-}
-
 :focus {
   border: solid 2px;
 }
-
 
 .card {
   display: grid;
@@ -174,7 +170,6 @@ nav a:focus {
   border-radius: 25px;
   font-family: Montserrat, Arial, sans-serif;
   font-size: 16px;
-  font-weight: bold;
   border: none;
   margin-top: 15px;
   width: 100%;
@@ -218,7 +213,6 @@ footer a {
   background-color: #ffffff;
   padding: 10px 15px 30px 15px;
   border-radius: 15px;
-  margin-top: 20px;
   align-items: center;
   max-height: fit-content;
   height: auto;
@@ -299,4 +293,17 @@ footer a {
     gap: 30px
   }
 
+  .glass_card {
+    padding: 50px;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .error {
+    margin-top: 30px;
+  }
+
+  .glass {
+    margin-top: -15px;
+  }
 }
